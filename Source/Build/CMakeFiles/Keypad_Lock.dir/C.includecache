@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/PJ_RPI/Examples/Keypad_Lock/Source/main.c
+PJ_RPI.h
+/home/pi/PJ_RPI/Examples/Keypad_Lock/Source/PJ_RPI.h
+stdio.h
+-
+
