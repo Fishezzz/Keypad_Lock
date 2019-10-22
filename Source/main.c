@@ -14,32 +14,6 @@ int inputCode[4];
 int digitsEntered = 0;
 u_int8_t locked = 0;
 
-/* void prepLine(int line) {
-    for (int i = 0; i < (sizeof(out)/sizeof(out[0])) - 1; i++)
-    {
-        if (line == i)
-            GPIO_SET = 1 << out[i];
-        else
-            GPIO_CLR = 1 << out[i];
-    }
-}
- */
-/* int readButton() {
-    int key = -1;
-    for (int i = 0; i < 4 - 1; i++)
-    {
-        prepLine(out[i]);
-        for (int j = 0; j < 4 - 1; j++)
-        {
-            // if (GPIO_READ(in[j]) & (0x01 << in[j]) == (0x01 << in[j]))
-            if (GPIO_READ(in[j]))
-                key = i * 4 + j;
-        }
-    }
-
-    return key;
-}
- */
 int GetPressedKey()
 {
 	GPIO_SET = 1 << out[0];
