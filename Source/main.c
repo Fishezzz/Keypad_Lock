@@ -128,7 +128,7 @@ int main()
                     if (digitsEntered == 0) {
                         printf("Code: ");
                     }
-                    inputCode[digitsEntered - 1] = key;
+                    inputCode[digitsEntered] = key;
                     if (digitsEntered < 4) {
                         printf("* ");
                         digitsEntered++;
